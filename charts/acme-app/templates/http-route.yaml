@@ -5,9 +5,14 @@ metadata:
   name: {{ include "acme-app.fullname" . }}
   labels:
     {{- include "acme-app.labels" . | nindent 4 }}
-  {{- with .Values.httpRoute.annotations }}
+  {{- if or .Values.annotations .Values.httpRoute.annotations }}
   annotations:
-    {{- toYaml . | nindent 4 }}
+    {{- with .Values.annotations }}
+    {{ toYaml . | indent 4 }}
+    {{- end }}
+    {{- with .Values.httpRoute.annotations }}
+    {{ toYaml . | indent 4 }}
+    {{- end }}
   {{- end }}
 spec:
   parentRefs:
