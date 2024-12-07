@@ -2,6 +2,15 @@ apiVersion: v1
 entries:
   acme-app:
   - apiVersion: v2
+    created: "2024-12-07T22:18:31.640270293Z"
+    description: A Helm chart for Kubernetes
+    digest: dc434ad7c2369892b4f8cce569266daa4e4a0ff7fd7eff0de2b616d490d14351
+    name: acme-app
+    type: application
+    urls:
+    - https://github.com/gitops-ci-cd/helm-charts/releases/download/acme-app-0.3.0/acme-app-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
     created: "2024-12-07T21:45:25.08552499Z"
     description: A Helm chart for Kubernetes
     digest: c1ac4cd60a43dc95010eba9d21110ca93311c6aa85f6908ece6fe966ca50f7b6
@@ -37,4 +46,4 @@ entries:
     urls:
     - https://github.com/gitops-ci-cd/helm-charts/releases/download/acme-app-0.1.0/acme-app-0.1.0.tgz
     version: 0.1.0
-generated: "2024-12-07T21:45:25.085567218Z"
+generated: "2024-12-07T22:18:31.640325116Z"
